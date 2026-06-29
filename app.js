@@ -27,7 +27,6 @@ const userRouter = require("./routes/user.js");
 
 // ================= DATABASE =================
 
-//const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 const dbUrl= process.env.ATLASDB_URL;
 
 async function main() {
@@ -113,19 +112,6 @@ app.use("/listings/:id/reviews", reviewRouter);
 
 app.use("/", userRouter);
 
-// ================= HOME =================
-
-//app.get("/", (req, res) => {
-//  res.send("Hi I am root!");
-//});
-
-// ================= DEBUG =================
-
-// Uncomment if needed
-// app.use((req, res, next) => {
-//   console.log("URL:", req.originalUrl);
-//   next();
-// });
 
 // ================= 404 =================
 
@@ -145,6 +131,6 @@ app.use((err, req, res, next) => {
 
 // ================= SERVER =================
 
-app.listen(8080, () => {
-  console.log("Server running on port 8080");
+app.listen(process.env.PORT || 8080, () => {
+  console.log("Server running");
 });
