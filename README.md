@@ -3,7 +3,9 @@
 WanderLust is a full-stack web application inspired by Airbnb that allows users to explore unique travel destinations, create and manage property listings, upload images, and share experiences through reviews. The platform includes secure authentication, authorization, cloud-based image storage, and an interactive map for property locations.
 
 ---
+🚀 Live Demo
 
+🌐 Live Website: Coming Soon
 
 📂 **GitHub Repository:** https://github.com/Vedikaraut24/WanderLust
 
